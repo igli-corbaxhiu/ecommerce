@@ -1,0 +1,91 @@
+/* CMS page content */
+
+.aimeos.cms-page {
+	padding: 0;
+}
+
+.aimeos.cms-page .container-xl {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+.aimeos.cms-page h1 {
+	font-size: 200%;
+	margin-bottom: 2rem;
+}
+
+.aimeos.cms-page h2 {
+	font-size: 150%;
+	margin-bottom: 1.5rem;
+}
+
+.aimeos.cms-page h3 {
+	font-size: 125%;
+	margin-bottom: 1rem;
+}
+
+.aimeos.cms-page h1,
+.aimeos.cms-page h2 {
+	position: relative;
+	padding-bottom: 0.5rem;
+	margin-top: 0.5rem;
+	text-align: center;
+}
+
+.aimeos.cms-page h1:before,
+.aimeos.cms-page h2:not([itemprop]):before,
+.aimeos.cms-page h1:after,
+.aimeos.cms-page h2:not([itemprop]):after {
+	content: "";
+	margin: 0 auto;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+.aimeos.cms-page h1:before,
+.aimeos.cms-page h2:not([itemprop]):before {
+	border-bottom: #CCCCCC;
+	border-bottom: 1px solid var(--ai-primary-light, #CCCCCC);
+	width: 12rem;
+}
+
+.aimeos.cms-page h1:after,
+.aimeos.cms-page h2:not([itemprop]):after {
+	border-bottom: #282828;
+	border-bottom: 1px solid var(--ai-primary, #282828);
+	width: 6rem;
+}
+
+.aimeos.cms-page .background {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #F5F5F5;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	color: #FFFFFF;
+	padding: 2rem 0;
+}
+
+.aimeos.cms-page .background[data-background] {
+	font-size: 4vw;
+}
+
+.aimeos.cms-page .contact-pot {
+	display: none;
+}
+
+.aimeos.cms-page .contact-form .btn {
+	margin: auto;
+	margin-top: 2rem;
+	display: inherit;
+}
+
+.aimeos.cms-page .catalog-list .slider-nav::after,
+.aimeos.cms-page .catalog-list .slider-nav-round .slider-nav::before,
+.aimeos.cms-page .catalog-list .slider-nav-square .slider-nav::before {
+	background-color: var(--ai-primary, #282828);
+}
